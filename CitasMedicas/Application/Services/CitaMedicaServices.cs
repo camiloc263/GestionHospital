@@ -72,12 +72,10 @@ namespace CitasMedicas.Application.Services
             _context.citamedica.Add(cita);
             await _context.SaveChangesAsync();
             return true;
+
         }
-        public async Task<bool> DeleteCita(int idcita)
+        public async Task<bool> DeleteCita(CitaMedica cita)
         {
-            var cita = await _context.citamedica.FindAsync(idcita);
-            if (cita == null)
-                return false;
 
             _context.citamedica.Remove(cita);
             await _context.SaveChangesAsync();

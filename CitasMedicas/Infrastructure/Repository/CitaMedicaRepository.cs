@@ -39,13 +39,13 @@ namespace CitasMedicas.Infrastructure.Repository
          {
              return await citaMedicaServices.UpdateCitaByPacienteId(idPaciente, cita);
          }
-         public async Task<bool> AddCita(CitaMedica cita)
+         public async Task<bool> AddAsync(CitaMedica cita)
          {
                return await citaMedicaServices.AddCita(cita);
          }
-         public async Task<bool> DeleteCita(int idcita)
+         public async Task<bool> DeleteAsync(CitaMedica cita)
          {
-             return await citaMedicaServices.DeleteCita(idcita);
+             return await citaMedicaServices.DeleteCita(cita);
          }
 
          public async Task<CitaMedica> AgendarCita(string numeroDocumento, DateTime fecha)

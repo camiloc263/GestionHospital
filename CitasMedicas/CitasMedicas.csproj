@@ -219,6 +219,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Commands\AddCitaCommand.cs" />
+    <Compile Include="Application\Commands\AddCitasCommandHandler.cs" />
+    <Compile Include="Application\Commands\DeleteCitaCommand.cs" />
+    <Compile Include="Application\Commands\DeleteCitaCommandHandler.cs" />
     <Compile Include="Application\Commands\UpdateCitaCommand.cs" />
     <Compile Include="Application\Commands\UpdateCitaCommandHandler.cs" />
     <Compile Include="Application\DTO\CitaDto.cs" />

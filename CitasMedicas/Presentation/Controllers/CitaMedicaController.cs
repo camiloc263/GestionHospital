@@ -39,7 +39,7 @@ namespace CitasMedicas.Infrastructure.Controllers
             return Ok(citas);
         }
         [HttpGet]
-        [Route("{Id}")]
+        [Route("getBy/{Id}")]
         public async Task<IHttpActionResult> GetCitasByIdQuery(int Id)
         {
             var result = await _mediator.Send(new GetCitasByIdQuery(Id));
@@ -48,7 +48,7 @@ namespace CitasMedicas.Infrastructure.Controllers
 
         [HttpPut]
         [Route("{Id}")]
-        public async Task<IHttpActionResult> UpdatePerson(int Id,[FromBody] CitaDto citaDto)
+        public async Task<IHttpActionResult> UpdateCita(int Id,[FromBody] CitaDto citaDto)
         {
             var command = new UpdateCitaCommand(Id, citaDto);
             var result = await _mediator.Send(command);
@@ -58,10 +58,27 @@ namespace CitasMedicas.Infrastructure.Controllers
 
         }
 
+        [HttpPost]
+        [Route]
+        public async Task<IHttpActionResult> AddCita([FromBody] CitaDto cita)
+        {
+            var command = new AddCitaCommand(cita);
+            var id = await _mediator.Send(command);
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("{idcita}")]
+        public async Task<IHttpActionResult> DeleteCita(int idcita)
+        {
+            var result = await _mediator.Send(new DeleteCitaCommand(idcita));
+            if (!result)
+              return NotFound();
+
+            return Ok();
+        }
        
-
-
-        /*   [HttpGet]
+           [HttpGet]
            [Route("{fecha}")]
            public async Task<IHttpActionResult> GetByDate(string fecha)
            {
@@ -78,46 +95,12 @@ namespace CitasMedicas.Infrastructure.Controllers
            }
 
            [HttpPut]
-           public async Task<IHttpActionResult> UpdateCita([FromBody] CitaMedica cita)
-           {
-
-               var resultado = await citaMedicaServices.UpdateCita(cita);
-
-               if (!resultado)
-                   return NotFound();
-
-               return Ok(resultado);
-           }
-
-           [HttpPut]
            [Route("{idPaciente}")]
            public async Task<IHttpActionResult> UpdateCitaByPacienteId(int idPaciente, [FromBody] CitaMedica cita)
            {
 
 
                var resultado = await citaMedicaServices.UpdateCitaByPacienteId(idPaciente, cita);
-
-               if (!resultado)
-                   return NotFound();
-
-               return Ok(resultado);
-           }
-
-           [HttpPost]
-           public async Task<IHttpActionResult> AddCita([FromBody] CitaMedica cita)
-           {
-
-
-               var nuevaCita = await citaMedicaServices.AddCita(cita);
-
-               return Created($"api/CitaMedica/{nuevaCita.idcita}", nuevaCita);
-           }
-
-           [HttpDelete]
-           [Route("{idcita}")]
-           public async Task<IHttpActionResult> DeleteCita(int idcita)
-           {
-               var resultado = await citaMedicaServices.DeleteCita(idcita);
 
                if (!resultado)
                    return NotFound();
@@ -145,7 +128,7 @@ namespace CitasMedicas.Infrastructure.Controllers
                    return NotFound();
 
                return Ok("Cita finalizada exitosamente");
-           }*/
+           }
 
     }
 }

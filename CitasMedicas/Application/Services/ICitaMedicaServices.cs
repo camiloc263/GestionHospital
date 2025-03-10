@@ -14,7 +14,7 @@ namespace CitasMedicas.Application.Services
         Task<bool> Update(CitaMedica cita);
         Task<bool> UpdateCitaByPacienteId(int idPaciente, CitaMedica cita);
         Task<bool> AddCita(CitaMedica cita);
-        Task<bool> DeleteCita(int idcita);
+        Task<bool> DeleteCita(CitaMedica idcita);
         Task<bool> FinalizarCitaAsync(int iduausuario, CitaMedica cita);
         Task<List<CitaMedica>> GetByDate(DateTime fecha);
 

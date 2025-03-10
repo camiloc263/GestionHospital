@@ -72,6 +72,9 @@ namespace CitasMedicas
             container.Register<IRequestHandler<GetCitasByIdQuery, CitaDto>, GetCitasByIdQueryHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<GetAllCitasQuery, List<CitaDto>>, GetAllCitasQueryHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<UpdateCitaCommand, bool>, UpdateCitaCommandHandler>(Lifestyle.Scoped);
+            container.Register<IRequestHandler<AddCitaCommand, bool>, AddCitasCommandHandler>(Lifestyle.Scoped);
+            container.Register<IRequestHandler<DeleteCitaCommand, bool>, DeleteCitaCommandHandler>(Lifestyle.Scoped);
+
 
 
             // Registrar AutoMapper
