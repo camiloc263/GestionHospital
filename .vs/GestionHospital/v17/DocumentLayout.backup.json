@@ -3,36 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\presentation\\controllers\\citamedicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\presentation\\controllers\\citamedicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\persona\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\citasmedicas\\application\\queries\\getallcitasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\queries\\getallcitasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\citasmedicas\\application\\commands\\deletecitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\deletecitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\citasmedicas\\application\\commands\\addcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\addcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\citasmedicas\\application\\commands\\deletecitacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\deletecitacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\deletepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\deletepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\addpersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\addpersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\addpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\addpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\infrastructure\\configuration\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\infrastructure\\configuration\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\domain\\interfaces\\irabitmqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\domain\\interfaces\\irabitmqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\domain\\entities\\listapersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\domain\\entities\\listapersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\presentation\\controllers\\citamedicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\presentation\\controllers\\citamedicacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\services\\citamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\services\\citamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\services\\icitamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\services\\icitamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\infrastructure\\messaging\\rabbitmqproduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\infrastructure\\messaging\\rabbitmqproduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\infrastructure\\repository\\citamedicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +81,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\queries\\getallcitasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\queries\\getallcitasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\commands\\deletecitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\deletecitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\commands\\addcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\addcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\commands\\deletecitacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\deletecitacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\services\\icitamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\services\\icitamedicaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\domain\\interfaces\\icitamedicarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,36 +119,12 @@
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\queries\\getcitasbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\deletepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\deletepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\infrastructure\\repository\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\presentation\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\addpersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\addpersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\domain\\interfaces\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\domain\\interfaces\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\domain\\interfaces\\irabitmqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\domain\\interfaces\\irabitmqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|c:\\users\\andres.caicedo.iblinetum\\source\\repos\\personas\\citasmedicas\\application\\commands\\addcitascommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\commands\\addcitascommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\application\\commands\\addcitascommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\persona\\application\\commands\\addpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF8F4C7-2417-48F4-AE69-6D6AC52E1FF8}|Persona\\Persona.csproj|solutionrelative:persona\\application\\commands\\addpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\application\\commands\\updatecitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\infrastructure\\configuration\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\infrastructure\\messaging\\rabbitmqproduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\infrastructure\\messaging\\rabbitmqproduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\citasmedicas\\infrastructure\\repository\\citamedicacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3544FFD4-9AAB-4A95-8F0F-EAB56C308632}|CitasMedicas\\CitasMedicas.csproj|solutionrelative:citasmedicas\\infrastructure\\repository\\citamedicacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -138,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,219 +182,56 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICitaMedicaServices.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:42:13.004Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CitaMedicaServices.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:43:58.641Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CitaMedicaController.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
-              "RelativeToolTip": "CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Persona\\Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Persona\\Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:58:53.273Z",
+              "WhenOpened": "2025-03-10T15:43:37.116Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteCitaCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:10:07.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteCitaCommand.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:07:04.922Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Global.asax.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Global.asax.cs",
-              "RelativeToolTip": "CitasMedicas\\Global.asax.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwCsAAAAMAAAAAAAAAA==",
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\DTO\\UserDto.cs",
+              "RelativeDocumentMoniker": "Persona\\Application\\DTO\\UserDto.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\DTO\\UserDto.cs",
+              "RelativeToolTip": "Persona\\Application\\DTO\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:01:53.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddCitaCommand.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:35:42.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAllCitasQuery.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:36:31.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CitaMedicaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
-              "RelativeToolTip": "CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:41:37.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T00:44:17.739Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "PersonaServices.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\PersonaServices.cs",
-              "RelativeDocumentMoniker": "Persona\\Application\\Services\\PersonaServices.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\PersonaServices.cs",
-              "RelativeToolTip": "Persona\\Application\\Services\\PersonaServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:22:46.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICitaMedicaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
-              "RelativeToolTip": "CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:40:05.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GetCitasByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:33:03.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetCitasByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:39:58.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DeletePersonCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
-              "RelativeDocumentMoniker": "Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
-              "RelativeToolTip": "Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T04:10:44.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PersonaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
-              "RelativeDocumentMoniker": "Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
-              "RelativeToolTip": "Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:44:56.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\PersonaController.cs",
-              "RelativeDocumentMoniker": "Persona\\Presentation\\Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\PersonaController.cs",
-              "RelativeToolTip": "Persona\\Presentation\\Controllers\\PersonaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:57:51.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "AddPersonCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\AddPersonCommandHandler.cs",
               "RelativeDocumentMoniker": "Persona\\Application\\Commands\\AddPersonCommandHandler.cs",
@@ -366,51 +239,84 @@
               "RelativeToolTip": "Persona\\Application\\Commands\\AddPersonCommandHandler.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:55:24.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T01:55:24.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AddCitasCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
-              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADgvw8AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "Persona\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "Persona\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:41:02.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T16:22:02.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IPersonaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
-              "RelativeDocumentMoniker": "Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
-              "RelativeToolTip": "Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Persona\\Application\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\JwtService.cs",
+              "RelativeToolTip": "Persona\\Application\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:49:21.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T15:39:21.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IRabitMqRepository.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
-              "RelativeToolTip": "CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Persona\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Global.asax.cs",
+              "RelativeToolTip": "Persona\\Global.asax.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:43:32.068Z",
+              "WhenOpened": "2025-03-10T16:00:42.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Web.config",
+              "RelativeDocumentMoniker": "Persona\\Web.config",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Web.config",
+              "RelativeToolTip": "Persona\\Web.config",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-10T15:27:26.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 1,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Persona\\Presentation\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Presentation\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Persona\\Presentation\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:57:51.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\App_Start\\Startup.cs",
+              "RelativeDocumentMoniker": "Persona\\App_Start\\Startup.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\App_Start\\Startup.cs",
+              "RelativeToolTip": "Persona\\App_Start\\Startup.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvyMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:18:26.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AddPersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\AddPersonCommand.cs",
               "RelativeDocumentMoniker": "Persona\\Application\\Commands\\AddPersonCommand.cs",
@@ -418,12 +324,263 @@
               "RelativeToolTip": "Persona\\Application\\Commands\\AddPersonCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T03:36:22.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T03:36:22.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRabitMqRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
+              "RelativeToolTip": "CitasMedicas\\Domain\\Interfaces\\IRabitMqRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:43:32.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeletePersonCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
+              "RelativeDocumentMoniker": "Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
+              "RelativeToolTip": "Persona\\Application\\Commands\\DeletePersonCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T04:10:44.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CitaMedicaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
+              "RelativeToolTip": "CitasMedicas\\Infrastructure\\Repository\\CitaMedicaRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:41:37.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Global.asax.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Global.asax.cs",
+              "RelativeToolTip": "CitasMedicas\\Global.asax.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwCwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:01:53.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\configuration\\MapperProfile.cs",
+              "RelativeDocumentMoniker": "Persona\\Infrastructure\\configuration\\MapperProfile.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\configuration\\MapperProfile.cs",
+              "RelativeToolTip": "Persona\\Infrastructure\\configuration\\MapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T00:13:05.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CitaMedicaController.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
+              "RelativeToolTip": "CitasMedicas\\Presentation\\Controllers\\CitaMedicaController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:58:53.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RabbitMQProduce.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
+              "RelativeToolTip": "CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:04:30.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CitaMedicaServices.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Services\\CitaMedicaServices.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:43:58.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ListaPersona.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Entities\\ListaPersona.cs",
+              "RelativeDocumentMoniker": "Persona\\Domain\\Entities\\ListaPersona.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Entities\\ListaPersona.cs",
+              "RelativeToolTip": "Persona\\Domain\\Entities\\ListaPersona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:04:48.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PersonaServices.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\PersonaServices.cs",
+              "RelativeDocumentMoniker": "Persona\\Application\\Services\\PersonaServices.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Services\\PersonaServices.cs",
+              "RelativeToolTip": "Persona\\Application\\Services\\PersonaServices.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:22:46.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
+              "RelativeDocumentMoniker": "Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
+              "RelativeToolTip": "Persona\\Infrastructure\\Repository\\PersonaRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:44:56.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddCitaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\AddCitaCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T12:35:42.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DeleteCitaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\DeleteCitaCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T13:07:04.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DeleteCitaCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\DeleteCitaCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T13:10:07.959Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "GetAllCitasQuery.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetAllCitasQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:36:31.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ICitaMedicaServices.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Services\\ICitaMedicaServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:42:13.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ICitaMedicaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
+              "RelativeToolTip": "CitasMedicas\\Domain\\Interfaces\\ICitaMedicaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:40:05.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetCitasByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetCitasByIdQueryHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:33:03.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GetCitasByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Queries\\GetCitasByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:39:58.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddCitasCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
+              "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
+              "RelativeToolTip": "CitasMedicas\\Application\\Commands\\AddCitasCommandHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADgvw8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T12:41:02.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "RelativeToolTip": "Persona\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T01:49:21.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "UpdateCitaCommand.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\UpdateCitaCommand.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\UpdateCitaCommand.cs",
@@ -431,12 +588,11 @@
               "RelativeToolTip": "CitasMedicas\\Application\\Commands\\UpdateCitaCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:51:21.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T01:51:21.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "GetAllCitasQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Queries\\GetAllCitasQueryHandler.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Application\\Queries\\GetAllCitasQueryHandler.cs",
@@ -448,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "UpdateCitaCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Commands\\UpdateCitaCommandHandler.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Application\\Commands\\UpdateCitaCommandHandler.cs",
@@ -456,12 +612,11 @@
               "RelativeToolTip": "CitasMedicas\\Application\\Commands\\UpdateCitaCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T01:54:14.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T01:54:14.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "CitaDto.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\DTO\\CitaDto.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Application\\DTO\\CitaDto.cs",
@@ -473,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "CitaMedica.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Domain\\Entities\\CitaMedica.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Domain\\Entities\\CitaMedica.cs",
@@ -485,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "PersonaClient.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Application\\Services\\PersonaClient.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Application\\Services\\PersonaClient.cs",
@@ -497,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 38,
               "Title": "CitaMedicaContext.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Repository\\CitaMedicaContext.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\Repository\\CitaMedicaContext.cs",
@@ -509,19 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "RabbitMQProduce.cs",
-              "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
-              "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
-              "ToolTip": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
-              "RelativeToolTip": "CitasMedicas\\Infrastructure\\Messaging\\RabbitMQProduce.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T05:04:30.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "MapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\CitasMedicas\\Infrastructure\\configuration\\MapperProfile.cs",
               "RelativeDocumentMoniker": "CitasMedicas\\Infrastructure\\configuration\\MapperProfile.cs",
@@ -533,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "UpdatePersonCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\UpdatePersonCommandHandler.cs",
               "RelativeDocumentMoniker": "Persona\\Application\\Commands\\UpdatePersonCommandHandler.cs",
@@ -545,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "UpdatePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\andres.caicedo.IBLINETUM\\source\\repos\\Personas\\Persona\\Application\\Commands\\UpdatePersonCommand.cs",
               "RelativeDocumentMoniker": "Persona\\Application\\Commands\\UpdatePersonCommand.cs",

@@ -2556,13 +2556,13 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException"/> class.
             </summary>
-            <param name="message">Addtional information to be included in the exception and displayed to user.</param>
+            <param name="message">Additional information to be included in the exception and displayed to user.</param>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException.#ctor(System.String,System.Exception)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException"/> class.
             </summary>
-            <param name="message">Addtional information to be included in the exception and displayed to user.</param>
+            <param name="message">Additional information to be included in the exception and displayed to user.</param>
             <param name="innerException">A <see cref="T:System.Exception"/> that represents the root cause of the exception.</param>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
@@ -3193,13 +3193,13 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException"/> class.
             </summary>
-            <param name="message">Addtional information to be included in the exception and displayed to user.</param>
+            <param name="message">Additional information to be included in the exception and displayed to user.</param>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException.#ctor(System.String,System.Exception)">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException"/> class.
             </summary>
-            <param name="message">Addtional information to be included in the exception and displayed to user.</param>
+            <param name="message">Additional information to be included in the exception and displayed to user.</param>
             <param name="innerException">A <see cref="T:System.Exception"/> that represents the root cause of the exception.</param>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
@@ -5090,11 +5090,13 @@
             <param name="subjectClaims"> Collection of <see cref="T:System.Security.Claims.Claim"/>'s.</param>
             <returns> A Merged list of <see cref="T:System.Security.Claims.Claim"/>'s.</returns>
         </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableException(System.Exception)">
+        <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableException(System.Exception,System.Boolean)">
             <summary>
             Check whether the given exception type is recoverable by LKG.
+            Decryption error is only recoverable, if the configuration has decryption keys in it.
             </summary>
             <param name="exception">The exception to check.</param>
+            <param name="configContainsDecryptionKeys">Whether the configuration contains decryption keys.</param>
             <returns><c>true</c> if the exception is certain types of exceptions otherwise, <c>false</c>.</returns>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableConfiguration(System.String,Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens.BaseConfiguration,System.Exception)">
@@ -5107,11 +5109,12 @@
             <param name="currentException">The exception to check.</param>
             <returns><c>true</c> if the configuration is recoverable otherwise, <c>false</c>.</returns>
         </member>
-        <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableExceptionType(System.Type)">
+        <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableExceptionType(System.Type,System.Boolean)">
             <summary>
             Check whether the given exception type is recoverable by LKG.
             </summary>
             <param name="exceptionType">The exception type to check</param>
+            <param name="configContainsDecryptionKeys">Whether the configuration contains decryption keys.</param>
             <returns><c>true</c> if the exception is certain types of exceptions otherwise, <c>false</c>.</returns>
         </member>
         <member name="M:Microsoft.IdentityModel.Tokens.TokenUtilities.IsRecoverableConfigurationAndExceptionType(System.String,Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens.BaseConfiguration,System.Type)">

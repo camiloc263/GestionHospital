@@ -13,6 +13,8 @@ using System;
 using AutoMapper;
 using System.Linq;
 
+using System.Configuration;
+
 namespace Persona
 {
     public class WebApiApplication : System.Web.HttpApplication
@@ -22,6 +24,8 @@ namespace Persona
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 
+             AreaRegistration.RegisterAllAreas();
+  
             //registro de dependencias
             RegisterDependencies(container);
             //registro de controladores
@@ -43,6 +47,10 @@ namespace Persona
             container.Register<PersonaContext>(Lifestyle.Scoped);
             container.Register<IPersonaServices, PersonaServices>(Lifestyle.Scoped);
             container.Register<IPersonaRepository, PersonaRepository>(Lifestyle.Scoped);
+
+           
+            container.Register<JwtService>(Lifestyle.Scoped);
+
 
             // Registrar AutoMapper
             var mapperConfig = new MapperConfiguration(cfg =>

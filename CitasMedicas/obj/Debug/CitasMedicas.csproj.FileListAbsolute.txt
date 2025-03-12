@@ -149,3 +149,12 @@ C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\AutoMap
 C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\AutoMapper.xml
 C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\MediatR.xml
 C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\MediatR.Extensions.SimpleInjector.xml
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.dll
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.dll
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.Jwt.dll
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Owin.dll
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.xml
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.xml
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.Jwt.xml
+C:\Users\andres.caicedo.IBLINETUM\source\repos\Personas\CitasMedicas\bin\Microsoft.Owin.Security.OAuth.xml

@@ -7,6 +7,7 @@ using System.Web.Http;
 
 namespace Persona.Infrastructure.Controllers
 {
+    [Authorize]
     [RoutePrefix("api/persona")]
     public class PersonaController : ApiController
     {
@@ -17,7 +18,7 @@ namespace Persona.Infrastructure.Controllers
         {
             _mediator = mediator;
         }
-
+        
         [HttpGet]
         [Route]
         public async Task<IHttpActionResult> GetAll()
