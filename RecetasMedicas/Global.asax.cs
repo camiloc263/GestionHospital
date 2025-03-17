@@ -1,6 +1,7 @@
-﻿using CitasMedicas.Application.Services;
+﻿using AutoMapper;
+using CitasMedicas.Application.Services;
+
 using CitasMedicas.Domain.Interfaces;
-using CitasMedicas.Infrastructure.Controllers;
 using CitasMedicas.Infrastructure.Messaging;
 using CitasMedicas.Infrastructure.Repository;
 using MediatR;
@@ -12,16 +13,15 @@ using RecetasMedicas.Infrastructure.Repository;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
+using System;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using AutoMapper;
-using System;
-using System.Linq;
 using System.Web.Mvc;
-using RecetasMedicas.Application.DTO;
-using RecetasMedicas.Application.Queries;
-using System.Collections.Generic;
+
+
+
 
 
 namespace RecetasMedicas
@@ -69,12 +69,14 @@ namespace RecetasMedicas
 
             container.Register<ICitaMedicaRepository, CitaMedicaRepository>(Lifestyle.Scoped);
             container.Register<IFormulaMedicaRepository, FormulaMedicaRepository>(Lifestyle.Scoped);
-
+            container.Register<JwtServiceR>(Lifestyle.Scoped);
+            container.Register<JwtService>(Lifestyle.Scoped);
             container.Register<ICitaMedicaServices, CitaMedicaServices>(Lifestyle.Scoped);
             container.Register<IFormulaMedicaServices, FormulaMedicaServices>(Lifestyle.Scoped);
             container.Register<PersonaClient>(() => new PersonaClient(new HttpClient()), Lifestyle.Singleton);
+            
 
-           
+
 
 
             // Registrar AutoMapper

@@ -289,6 +289,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Application\DTO\PersonaDto.cs" />
     <Compile Include="Domain\Interfaces\ICitaMedicaRepository.cs" />
+    <Compile Include="Presentation\Controllers\AuthController.cs" />
     <Compile Include="Presentation\Controllers\CitaMedicaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

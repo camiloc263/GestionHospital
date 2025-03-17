@@ -14,7 +14,8 @@ namespace CitasMedicas.Application.Services
 {
 	public class JwtService
 	{
-        public async Task<string> GetToken(UserDto loginDto)
+          
+            public async Task<string> GetToken(UserDto loginDto)
         {
             var key = ConfigurationManager.AppSettings["JwtKey"];
             var issuer = ConfigurationManager.AppSettings["JwtIssuer"];
@@ -44,6 +45,5 @@ namespace CitasMedicas.Application.Services
             var jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
             return await Task.FromResult(jwtToken);
         }
-
     }
 }

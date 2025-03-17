@@ -69,6 +69,8 @@ namespace CitasMedicas
             container.Register<IRequestHandler<UpdateCitaCommand, bool>, UpdateCitaCommandHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<AddCitaCommand, bool>, AddCitasCommandHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<DeleteCitaCommand, bool>, DeleteCitaCommandHandler>(Lifestyle.Scoped);
+            container.Register<JwtService>(Lifestyle.Scoped);
+
 
             // Registrar AutoMapper
             var mapperConfig = new MapperConfiguration(cfg =>
@@ -99,7 +101,8 @@ namespace CitasMedicas
                 var handlerInterface = handler.GetInterfaces()
                                               .First(i => i.GetGenericTypeDefinition() == typeof(IRequestHandler<,>));
 
-              
+               
+
             }
 
 

@@ -1,20 +1,17 @@
 ﻿using CitasMedicas.Application.DTO;
 using Microsoft.IdentityModel.JsonWebTokens;
-using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using JwtRegisteredClaimNames = System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames;
-
-
+using Microsoft.IdentityModel.Tokens;
 
 namespace RecetasMedicas.Application.Services
 {
-    public class JwtService
+    public class JwtServiceR
     {
         public async Task<string> GetToken(UserDto loginDto)
         {
@@ -31,7 +28,7 @@ namespace RecetasMedicas.Application.Services
 
             var permClaims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim("userid", loginDto.id) // Ahora usa el valor real de userId
             };
 

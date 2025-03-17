@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace CitasMedicas.Infrastructure.Controllers
 {
+    [Authorize]
     [RoutePrefix("api/citaMedica")]
     public class CitaMedicaController : ApiController
     {

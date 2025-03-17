@@ -1,12 +1,14 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using Microsoft.Owin;
 using Microsoft.Owin.Security.Jwt;
 using Owin;
 using System.Configuration;
 using System.Text;
-using AuthenticationMode = Microsoft.Owin.Security.AuthenticationMode;
+using Microsoft.Owin.Security;
 
 
 
+[assembly: OwinStartup(typeof(RecetasMedicas.App_Start.Startup))]
 namespace RecetasMedicas.App_Start
 {
     public class Startup

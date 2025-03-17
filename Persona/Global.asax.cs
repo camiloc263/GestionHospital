@@ -47,8 +47,6 @@ namespace Persona
             container.Register<PersonaContext>(Lifestyle.Scoped);
             container.Register<IPersonaServices, PersonaServices>(Lifestyle.Scoped);
             container.Register<IPersonaRepository, PersonaRepository>(Lifestyle.Scoped);
-
-           
             container.Register<JwtService>(Lifestyle.Scoped);
 
 

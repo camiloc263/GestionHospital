@@ -21,6 +21,7 @@ using System.Web.Http.Results;
 
 namespace RecetasMedicas.Infrastructure.Controllers
 {
+    [Authorize]
     [RoutePrefix("api/formulamedica")]
     public class FormulaMedicaController : ApiController
     {
