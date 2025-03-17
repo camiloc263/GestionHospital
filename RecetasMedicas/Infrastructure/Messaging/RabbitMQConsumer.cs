@@ -1,32 +1,25 @@
-﻿using RabbitMQ.Client;
-using RecetasMedicas.Application.Services;
-using System;
+﻿using MediatR;
 using Newtonsoft.Json;
-using System.Text;
-using RecetasMedicas.Domain.Entities;
-using System.Threading.Tasks;
+using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using System.Threading.Channels;
-using RecetasMedicas.Infrastructure.Repository;
-using RecetasMedicas.Domain.Interfaces;
-using System.Runtime.Remoting.Channels;
-using System.Diagnostics;
-using System.ComponentModel;
-using System.Configuration;
-using System.Linq;
+using RecetasMedicas.Application.Commands;
+using RecetasMedicas.Application.DTO;
+using System;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace RecetasMedicas.Infrastructure.Messaging
 {
     public class RabbitMQConsumer
     {
-       private const string QueueName = "recetas_queue";
+        private const string QueueName = "recetas_queue";
         private const string ExchangeName = "recetas_exchange";
-        private readonly IFormulaMedicaServices _formulaMedicaServices;
+        private readonly IMediator _mediator;
 
 
-        public RabbitMQConsumer(IFormulaMedicaServices formulaMedicaServices)
+        public RabbitMQConsumer(IMediator mediator)
         {
-            _formulaMedicaServices = formulaMedicaServices;
+           _mediator = mediator;
         }
 
         public async Task Escuchar()
@@ -49,10 +42,12 @@ namespace RecetasMedicas.Infrastructure.Messaging
 
                     try
                     {
-                        // Deserializa el mensaje y procesa la receta médica
-                        var receta = JsonConvert.DeserializeObject<FormulaMedica>(message);
-                        await _formulaMedicaServices.AddFormulaMedicaAsync(receta);
-                       
+                        // Deserializa el mensaje
+                        var recetaDTO = JsonConvert.DeserializeObject<FormulaMedicaDTO>(message);
+
+                        var command = new AddFormulaCommand(recetaDTO);
+                        var id = await _mediator.Send(command);
+
                     }
                     catch (Exception ex)
                     {
@@ -62,22 +57,22 @@ namespace RecetasMedicas.Infrastructure.Messaging
 
                 await channel.BasicConsumeAsync(queue: QueueName, autoAck: true, consumer: consumer);
 
-               
-                await Task.Delay(-1); // Mantiene el proceso en ejecución
+
+                await Task.Delay(-1);
             }
         }
 
 
     }
-    }
-
-        
+}
 
 
 
-                    
-        
 
-                      
 
-            
+
+
+
+
+
+

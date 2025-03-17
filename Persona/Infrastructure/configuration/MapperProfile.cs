@@ -15,7 +15,6 @@ namespace Persona.Application
             CreateMap<ListaPersona, PersonasDto>().ReverseMap();
 
 
-
         }
     }
 }

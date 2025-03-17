@@ -8,17 +8,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Web;
+using Persona.Application.Services;
 
 namespace Persona.Application.Commands
 {
 	public class AddPersonCommandHandler : IRequestHandler<AddPersonCommand, bool>
     {
-        private readonly IPersonaRepository _personaRepository;
+        private readonly IPersonaServices _personaService;
         private readonly IMapper _mapper;
 
-        public AddPersonCommandHandler(IPersonaRepository personaRepository, IMapper mapper)
+        public AddPersonCommandHandler(IPersonaServices personaService, IMapper mapper)
         {
-            _personaRepository = personaRepository;
+            _personaService = personaService;
             _mapper = mapper;
         }
 
@@ -26,7 +27,7 @@ namespace Persona.Application.Commands
         {
             var persona = _mapper.Map<ListaPersona>(request.PersonaDto);
 
-            var personaId = await _personaRepository.AddAsync(persona);
+            var personaId = await _personaService.AddAsync(persona);
             return true;
         }
     }

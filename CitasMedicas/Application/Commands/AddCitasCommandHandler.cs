@@ -8,17 +8,18 @@ using System.Threading;
 using System.Web;
 using CitasMedicas.Domain.Interfaces;
 using CitasMedicas.Infrastructure.Repository;
+using CitasMedicas.Application.Services;
 
 namespace CitasMedicas.Application.Commands
 {
 	public class AddCitasCommandHandler:IRequestHandler<AddCitaCommand, bool>
 	{
-        private readonly ICitaMedicaRepository _citaMedicaRepository;
+        private readonly ICitaMedicaServices _citaMedicaServices;
         private readonly IMapper _mapper;
 
-        public AddCitasCommandHandler(ICitaMedicaRepository citaMedicaRepository, IMapper mapper)
+        public AddCitasCommandHandler(ICitaMedicaServices citaMedicaServices, IMapper mapper)
         {
-            _citaMedicaRepository = citaMedicaRepository;
+            _citaMedicaServices = citaMedicaServices;
             _mapper = mapper;
         }
 
@@ -26,7 +27,7 @@ namespace CitasMedicas.Application.Commands
         {
             var citaMedica = _mapper.Map<CitaMedica>(request._citaDto);
 
-            var citaMedicaId = await _citaMedicaRepository.AddAsync(citaMedica);
+            var citaMedicaId = await _citaMedicaServices.AddAsync(citaMedica);
             return true;
         }
     }

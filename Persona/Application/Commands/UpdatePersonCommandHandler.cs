@@ -7,29 +7,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Web;
+using Persona.Application.Services;
 
 namespace Persona.Application.Commands
 {
 	public class UpdatePersonCommandHandler : IRequestHandler<UpdatePersonCommand, bool>
     {
-        private readonly IPersonaRepository _personaRepository;
+        private readonly IPersonaServices _personaService;
 
-
-        public UpdatePersonCommandHandler(IPersonaRepository personaRepository, IMapper mapper)
+        public UpdatePersonCommandHandler(IPersonaServices personaService, IMapper mapper)
         {
-            _personaRepository = personaRepository;
-
+          _personaService = personaService;
         }
-
         public async Task<bool> Handle(UpdatePersonCommand request, CancellationToken cancellationToken)
         {
             // Obtener la persona mediante algún método asíncrono (por ejemplo, GetByDocumentoAsync)
-            var personaEntitie = await _personaRepository.GetByDocumentoAsync(request.Identificacion);
+            var personaEntitie = await _personaService.GetByDocumentoAsync(request.Identificacion);
             if (personaEntitie == null)
             {
                 return false;
             }
-
             // Actualizar propiedades
             personaEntitie.tipoDocumento = request._personaDto.tipoDocumento;
             personaEntitie.numeroDocumento = request._personaDto.numeroDocumento;            
@@ -41,9 +38,8 @@ namespace Persona.Application.Commands
             personaEntitie.correo = request._personaDto.correo;
             personaEntitie.fechaNacimiento = request._personaDto.fechaNacimiento;
             personaEntitie.tipoUsuario = request._personaDto.tipoUsuario;
-
             // Actualizar la persona en el repositorio
-            await _personaRepository.UpdatePerson(personaEntitie);
+            await _personaService.UpdatePerson(personaEntitie);
             return true;
         }
     }

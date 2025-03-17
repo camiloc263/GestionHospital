@@ -1,5 +1,6 @@
 ﻿
 using Persona.Application.DTO;
+using Persona.Domain.Entities;
 using Persona.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,11 @@ namespace Persona.Application.Services
 {
    public  interface IPersonaServices
     {
-        Task<List<PersonasDto>> GetAll();
-       // Task<PersonasDto> GetByDocumentoAsync(string numeroDocumento);
-      //  Task<bool> UpdateAsync(string numeroDocumento, PersonasDto persona);
-        /* Task<List<PersonasDto>> GetByTipoUsuario(string tipoUsuario);
+        Task<List<ListaPersona>> GetAll();
+        Task<ListaPersona> GetByDocumentoAsync(string numeroDocumento);
+        Task<bool> UpdatePerson(ListaPersona persona);
+        Task<bool> AddAsync(ListaPersona persona);
+        Task<bool> DeleteAsync(ListaPersona persona);
 
-         Task<bool> AddPersona(PersonasDto nuevaPersona);
-         Task<bool> DeletePersonaByDocumento(string numeroDocumento);
-
-         */
     }
 }

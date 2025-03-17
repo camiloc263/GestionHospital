@@ -1,80 +1,73 @@
 ﻿using CitasMedicas.Application.Services;
 using CitasMedicas.Domain.Interfaces;
-using CitasMedicas.Infrastructure.Messaging;
-using CitasMedicas.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace CitasMedicas.Infrastructure.Repository
 {
-	public class CitaMedicaRepository : ICitaMedicaRepository
-	{
-        private readonly ICitaMedicaServices citaMedicaServices;
-        private readonly PersonaClient personaClient;
-        private readonly RabbitMQProduce rabbitMQProducer;
+    public class CitaMedicaRepository : ICitaMedicaRepository
+    {
+        private readonly IRabitMqRepository _rabbitMQProduce;
+        private readonly CitaMedicaContext _context;
 
-        public CitaMedicaRepository(ICitaMedicaServices citaMedicaServices, PersonaClient personaClient, RabbitMQProduce rabbitMQProducer)
+        public CitaMedicaRepository(CitaMedicaContext context, IRabitMqRepository rabbitMQProduce)
         {
-            this.citaMedicaServices = citaMedicaServices;
-            this.personaClient = personaClient;
-            this.rabbitMQProducer = rabbitMQProducer;
+            _context = context;
+            _rabbitMQProduce = rabbitMQProduce;
         }
         public async Task<List<CitaMedica>> GetAll()
         {
-            return await citaMedicaServices.GetAll();
+            return await _context.citamedica.ToListAsync();
         }
 
         public async Task<CitaMedica> GetById(int id)
         {
-            return await citaMedicaServices.GetById(id);
+            return await _context.citamedica.FirstOrDefaultAsync(c => c.idcita == id);
         }
         public async Task<bool> Update(CitaMedica cita)
         {
-            return await citaMedicaServices.Update(cita);
+            _context.Entry(cita).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return true;
         }
-        public async Task<bool> UpdateCitaByPacienteId(int idPaciente, CitaMedica cita)
-         {
-             return await citaMedicaServices.UpdateCitaByPacienteId(idPaciente, cita);
-         }
-         public async Task<bool> AddAsync(CitaMedica cita)
-         {
-               return await citaMedicaServices.AddCita(cita);
-         }
-         public async Task<bool> DeleteAsync(CitaMedica cita)
-         {
-             return await citaMedicaServices.DeleteCita(cita);
-         }
+        public async Task<CitaMedica> GetByPersonaId(int idpaciente)
+        {
+            return await _context.citamedica.FirstOrDefaultAsync(c => c.idpaciente == idpaciente);
+        }
 
-         public async Task<CitaMedica> AgendarCita(string numeroDocumento, DateTime fecha)
-         {
+        public async Task<bool> AddCita(CitaMedica cita)
+        {
 
-             var persona = await personaClient.GetPersonaByDocumento(numeroDocumento);
+            _context.citamedica.Add(cita);
+            await _context.SaveChangesAsync();
+            return true;
+
+        }
+        public async Task<bool> DeleteCita(CitaMedica cita)
+        {
+
+            _context.citamedica.Remove(cita);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> ValidarExistenciaPersona(int idpaciente)
+        {
+            return await _context.citamedica.AnyAsync(c => c.idpaciente == idpaciente);
+        }
+
+        public async Task<bool> FinalizarCitaAsync(int idPaciente, CitaMedica cita)
+        {
+            _context.Entry(cita).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return true;
 
 
-             var nuevaCita = new CitaMedica
-             {
-                 idpaciente = persona.idpaciente, 
-                 lugarcita = "Consultorio 1", 
-                 fechacita = fecha,
-                 estadocita = "Pendiente"
-             };
+        }
 
 
-             await citaMedicaServices.AddCita(nuevaCita);
-             return nuevaCita;
-         }
-
-         public async Task<bool> FinalizarCitaAsync(int idUsiario, CitaMedica cita)
-         {
-             return await citaMedicaServices.FinalizarCitaAsync(idUsiario, cita);
-         }
-
-          public async Task<List<CitaMedica>> GetByDate(DateTime fecha)
-         {
-             return await citaMedicaServices.GetByDate(fecha);
-         }
     }
 }

@@ -4,11 +4,6 @@ using Persona.Application.DTO;
 using Persona.Application.Queries;
 using Persona.Domain.Entities;
 using Persona.Domain.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestGestionHospital
 {
@@ -27,7 +22,7 @@ namespace TestGestionHospital
         }
 
         [Fact]
-        public async Task GetByDocumentPerson_ShouldReturnPersonaDto_WhenPersonaExists()
+        public async Task GetByDocumentPerson_Test()
         {
             // Arrange
             string documento = "12345678";
@@ -54,7 +49,7 @@ namespace TestGestionHospital
         }
 
         [Fact]
-        public async Task GetByDocumentPerson_ShouldReturnNull_WhenPersonaDoesNotExist()
+        public async Task GetByDocumentPerson_Dtest()
         {
             // Arrange
             string documento = "00000000";

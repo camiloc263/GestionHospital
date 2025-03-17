@@ -28,11 +28,9 @@ namespace Persona.Infrastructure.Repository
         }
         public async Task<bool> UpdatePerson(ListaPersona persona)
         {
-
-            _context.Entry(persona).State = EntityState.Modified;
+           _context.Entry(persona).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return true;
-
         }
         public async Task<bool> AddAsync(ListaPersona persona)
         {

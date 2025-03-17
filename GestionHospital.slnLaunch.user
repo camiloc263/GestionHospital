@@ -3,7 +3,7 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Persona\\Persona.csproj",
+        "Path": "CitasMedicas\\CitasMedicas.csproj",
         "Action": "Start"
       }
     ]

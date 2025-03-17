@@ -3,6 +3,7 @@ using RecetasMedicas.Domain.Interfaces;
 using RecetasMedicas.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -12,28 +13,34 @@ namespace RecetasMedicas.Application.Services
 {
     public class FormulaMedicaServices : IFormulaMedicaServices
     {
-        private readonly IFormulaMedicaRepository formulaMedicaRepository;
+        private readonly IFormulaMedicaRepository _formulaMedicaRepository;
 
         public FormulaMedicaServices(IFormulaMedicaRepository formulaMedicaRepository)
         {
-            this.formulaMedicaRepository = formulaMedicaRepository;
+            _formulaMedicaRepository = formulaMedicaRepository;
         }
-
         public async Task<List<FormulaMedica>> GetAllFormulasMedicas()
         {
-            return await formulaMedicaRepository.GetAll();
+            return await _formulaMedicaRepository.GetAll();
         }
         public async Task<FormulaMedica> GetById(int id)
         {
-            return await formulaMedicaRepository.GetById(id);
+            return await _formulaMedicaRepository.GetById(id);
         }
         public async Task<FormulaMedica> GetByCodigoRecetaAsync(string codigoReceta)
         {
-            return await formulaMedicaRepository.GetByCodigoRecetaAsync(codigoReceta);
+            return await _formulaMedicaRepository.GetByCodigoRecetaAsync(codigoReceta);
+        }
+
+        public async Task<bool> UpdateAsync(FormulaMedica formulaMedica)
+        {
+            await _formulaMedicaRepository.UpdateAsync(formulaMedica);
+            return true;
+
         }
         public async Task<bool> UpdateByCodigoRecetaAsync(string codigoReceta, FormulaMedica updatedFormula)
         {
-            var existingFormula = await formulaMedicaRepository.GetByCodigoRecetaAsync(codigoReceta);
+            var existingFormula = await _formulaMedicaRepository.GetByCodigoRecetaAsync(codigoReceta);
             if (existingFormula == null)
             {
                 return false;
@@ -44,22 +51,20 @@ namespace RecetasMedicas.Application.Services
             existingFormula.Estado = updatedFormula.Estado;
             existingFormula.IdPaciente = updatedFormula.IdPaciente;
 
-            await formulaMedicaRepository.UpdateAsync(existingFormula);
+            await _formulaMedicaRepository.UpdateAsync(existingFormula);
             return true;
         }
         public async Task<bool> AddFormulaMedicaAsync(FormulaMedica formulaMedica)
         {
-            return await formulaMedicaRepository.AddFormulaMedicaAsync(formulaMedica);
+            return await _formulaMedicaRepository.AddFormulaMedicaAsync(formulaMedica);
         }
-        public async Task<bool> DeleteByCodigoRecetaAsync(string codigoReceta)
+        public async Task<bool> DeleteByCodigoRecetaAsync(FormulaMedica formulaMedica)
         {
-            return await formulaMedicaRepository.DeleteByCodigoRecetaAsync(codigoReceta);
+            return await _formulaMedicaRepository.DeleteByCodigoRecetaAsync(formulaMedica);
         }
-
-
         public async Task CrearRecetaAsync(FormulaMedica receta)
         {
-            await formulaMedicaRepository.AddFormulaMedicaAsync(receta);
+            await _formulaMedicaRepository.AddFormulaMedicaAsync(receta);
         }
 
     }

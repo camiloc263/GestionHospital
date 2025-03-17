@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CitasMedicas.Infrastructure.Repository
 {
-    interface IRabitMqRepository
+  public  interface IRabitMqRepository
     {
-        Task<bool> SendMessage(object message);
+        Task PublicarMensaje(object message);
     }
 }

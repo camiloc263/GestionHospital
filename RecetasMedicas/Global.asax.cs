@@ -1,27 +1,28 @@
-﻿using SimpleInjector.Integration.WebApi;
-using SimpleInjector.Lifestyles;
-using SimpleInjector;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
-using RecetasMedicas.Infrastructure.Repository;
+﻿using CitasMedicas.Application.Services;
+using CitasMedicas.Domain.Interfaces;
+using CitasMedicas.Infrastructure.Controllers;
+using CitasMedicas.Infrastructure.Messaging;
+using CitasMedicas.Infrastructure.Repository;
+using MediatR;
+using RabbitMQ.Client;
 using RecetasMedicas.Application.Services;
 using RecetasMedicas.Domain.Interfaces;
 using RecetasMedicas.Infrastructure.Messaging;
-using System.Threading.Tasks;
-using Microsoft.Win32;
-using CitasMedicas.Application.Services;
-using CitasMedicas.Infrastructure.Messaging;
-using CitasMedicas.Domain.Interfaces;
-using CitasMedicas.Infrastructure.Repository;
+using RecetasMedicas.Infrastructure.Repository;
+using SimpleInjector;
+using SimpleInjector.Integration.WebApi;
+using SimpleInjector.Lifestyles;
 using System.Net.Http;
-using RabbitMQ.Client;
-using RecetasMedicas.Infrastructure.Controllers;
+using System.Threading.Tasks;
+using System.Web.Http;
+using AutoMapper;
+using System;
+using System.Linq;
+using System.Web.Mvc;
+using RecetasMedicas.Application.DTO;
+using RecetasMedicas.Application.Queries;
+using System.Collections.Generic;
+
 
 namespace RecetasMedicas
 {
@@ -30,26 +31,29 @@ namespace RecetasMedicas
         protected void Application_Start()
         {
             var container = new Container();
-           
-
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 
-            //registro de dependencias
+            // Registro de dependencias
             RegisterDependencies(container);
-            //registro de controladores
-            container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
-            //Verifica la configuracion
-            container.Verify();
-            // COnfigurar web api
-            GlobalConfiguration.Configuration.DependencyResolver =
-                new SimpleInjectorWebApiDependencyResolver(container);
 
-          RunBackgroundTasks(container);
+            // Registrar controladores
+            container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
+
+            // Verificar configuración de SimpleInjector
+            container.Verify();
+
+            // Configurar Web API con SimpleInjector
+            GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
+
+            AreaRegistration.RegisterAllAreas();
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            RunBackgroundTasks(container).GetAwaiter();
 
         }
 
         private void RegisterDependencies(Container container)
-        {  
+        {
             container.Register<IConnectionFactory>(() => new ConnectionFactory
             {
                 HostName = "localhost",
@@ -57,22 +61,59 @@ namespace RecetasMedicas
                 Password = "guest"
             }, Lifestyle.Singleton);
 
-            container.Register<RabbitMQProduce>(Lifestyle.Scoped);
+            container.Register<IRabitMqRepository, RabbitMQProduce>(Lifestyle.Singleton);
             container.Register<RabbitMQConsumer>(Lifestyle.Scoped);
 
-            
-            container.Register<CitaMedicaContext>(Lifestyle.Scoped);  // ✅ Agregado
+            container.Register<CitaMedicaContext>(Lifestyle.Scoped);
             container.Register<FormulaMedicaContext>(Lifestyle.Scoped);
 
-           
-            container.Register<ICitaMedicaRepository, CitasMedicas.Infrastructure.Repository.CitaMedicaServices>(Lifestyle.Scoped);
+            container.Register<ICitaMedicaRepository, CitaMedicaRepository>(Lifestyle.Scoped);
             container.Register<IFormulaMedicaRepository, FormulaMedicaRepository>(Lifestyle.Scoped);
 
-            container.Register<ICitaMedicaServices, CitasMedicas.Application.Services.CitaMedicaRepository>(Lifestyle.Scoped);
+            container.Register<ICitaMedicaServices, CitaMedicaServices>(Lifestyle.Scoped);
             container.Register<IFormulaMedicaServices, FormulaMedicaServices>(Lifestyle.Scoped);
-
             container.Register<PersonaClient>(() => new PersonaClient(new HttpClient()), Lifestyle.Singleton);
 
+           
+
+
+            // Registrar AutoMapper
+            var mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.AddMaps(AppDomain.CurrentDomain.GetAssemblies());
+            });
+            container.RegisterInstance<IMapper>(mapperConfig.CreateMapper());
+
+            // Registrar ServiceFactory como Singleton
+            container.RegisterSingleton<ServiceFactory>(() => type => container.GetInstance(type));
+
+            // Registrar IMediator correctamente
+            container.RegisterSingleton<IMediator>(() =>
+                new Mediator(container.GetInstance<ServiceFactory>()));
+
+            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+
+
+            var requestHandlers = assemblies.SelectMany(a => a.GetTypes())
+                                    .Where(t => !t.IsAbstract && !t.IsInterface) // Solo clases concretas
+                                    .Where(t => t.GetInterfaces()
+                                                 .Any(i => i.IsGenericType &&
+                                                           i.GetGenericTypeDefinition() == typeof(IRequestHandler<,>)));
+
+            foreach (var handler in requestHandlers)
+            {
+                var handlerInterface = handler.GetInterfaces()
+                                              .First(i => i.GetGenericTypeDefinition() == typeof(IRequestHandler<,>));
+
+
+            }
+
+            // Registrar todos los `IRequestHandler<TRequest, TResponse>`
+            container.Register(typeof(IRequestHandler<,>), assemblies);
+
+            container.Collection.Register(typeof(INotificationHandler<>), assemblies);
+            container.Collection.Register(typeof(IPipelineBehavior<,>), assemblies);
 
         }
 
@@ -80,15 +121,10 @@ namespace RecetasMedicas
         {
             using (AsyncScopedLifestyle.BeginScope(container))
             {
-                var receptorMQ = container.GetInstance<RabbitMQConsumer>();
-                await Task.Run(() => receptorMQ.Escuchar());
+                var receptorMQ = container.GetInstance<RabbitMQConsumer>(); await Task.Run(() => receptorMQ.Escuchar());
             }
 
         }
 
-
-
     }
-
 }
-

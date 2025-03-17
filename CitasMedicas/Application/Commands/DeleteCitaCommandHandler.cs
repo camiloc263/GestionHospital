@@ -6,27 +6,28 @@ using System.Threading;
 using System.Web;
 using MediatR;
 using CitasMedicas.Domain.Interfaces;
+using CitasMedicas.Application.Services;
 
 namespace CitasMedicas.Application.Commands
 {
 	public class DeleteCitaCommandHandler: IRequestHandler <DeleteCitaCommand, bool>
     {
-        private readonly ICitaMedicaRepository _citaRepository;
+        ICitaMedicaServices _citaMedicaServices;
 
-        public DeleteCitaCommandHandler(ICitaMedicaRepository citaRepository)
+        public DeleteCitaCommandHandler(ICitaMedicaServices citaMedicaServices)
         {
-            _citaRepository = citaRepository;
+            _citaMedicaServices = citaMedicaServices;
         }
 
         public async Task<bool> Handle(DeleteCitaCommand request, CancellationToken cancellationToken)
         {
-            var cita = await _citaRepository.GetById(request._id);
+            var cita = await _citaMedicaServices.GetById(request._id);
             if (cita == null)
             {
                 return false; 
             }
 
-            return await _citaRepository.DeleteAsync(cita);
+            return await _citaMedicaServices.DeleteAsync(cita);
         }
     }
 }

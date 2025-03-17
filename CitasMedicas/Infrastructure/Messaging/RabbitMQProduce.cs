@@ -14,7 +14,7 @@ using System.Configuration;
 
 namespace CitasMedicas.Infrastructure.Messaging
 {
-    public class RabbitMQProduce
+    public class RabbitMQProduce: IRabitMqRepository
     {
         private const string QueueName = "recetas_queueSet";
         private const string ExchangeName = "recetas_exchange";
@@ -25,7 +25,6 @@ namespace CitasMedicas.Infrastructure.Messaging
         {
             _connectionFactory = connectionFactory;
         }
-
         public async Task PublicarMensaje(object message)
         {
             try

@@ -1,7 +1,4 @@
 ﻿using Microsoft.Owin.Security.OAuth;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web.Http;
 
 namespace Persona
@@ -9,7 +6,7 @@ namespace Persona
     public static class WebApiConfig
     {
 
-    
+
         public static void Register(HttpConfiguration config)
         {
             config.SuppressDefaultHostAuthentication();

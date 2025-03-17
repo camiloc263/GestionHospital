@@ -1,5 +1,15 @@
-﻿using RecetasMedicas.Application.Services;
+﻿using CitasMedicas.Application.Commands;
+using CitasMedicas.Application.DTO;
+using CitasMedicas.Application.Queries;
+using CitasMedicas.Application.Services;
+using CitasMedicas.Infrastructure.Messaging;
+using MediatR;
+using RecetasMedicas.Application.Commands;
+using RecetasMedicas.Application.DTO;
+using RecetasMedicas.Application.Queries;
+using RecetasMedicas.Application.Services;
 using RecetasMedicas.Domain.Entities;
+using RecetasMedicas.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,35 +24,40 @@ namespace RecetasMedicas.Infrastructure.Controllers
     [RoutePrefix("api/formulamedica")]
     public class FormulaMedicaController : ApiController
     {
-        private readonly IFormulaMedicaServices formulaMedicaServices;
+        private readonly IFormulaMedicaRepository _formulaMedicaRepository;
+        private readonly PersonaClient _personaClient;
+        private readonly IMediator _mediator;
 
-        public FormulaMedicaController(IFormulaMedicaServices formulaMedicaServices)
+        public FormulaMedicaController(IFormulaMedicaRepository formulaMedicaRepository, PersonaClient personaClient, IMediator mediator)
         {
-            this.formulaMedicaServices = formulaMedicaServices;
+            _formulaMedicaRepository = formulaMedicaRepository;
+            _personaClient = personaClient;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        [Route("listar")]
+        [Route]
         public async Task<IHttpActionResult> GetAll()
         {
-            
-            return Ok(await formulaMedicaServices.GetAllFormulasMedicas());
+
+            var citas = await _mediator.Send(new GetAllFomulaQuery());
+            return Ok(citas);
         }
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IHttpActionResult> GetById(int id)
         {
-            var formulaMedica = await formulaMedicaServices.GetById(id);
+            var formulaMedica = await _mediator.Send(new GetByIdQuery(id));
             if (formulaMedica == null)
             {
-                return NotFound(); //Return 404 if not found
+                return NotFound();
             }
             return Ok(formulaMedica);
         }
 
         [HttpGet]
-        [Route("{codigoReceta}")]
+        [Route("codigo/{codigoReceta}")]
         public async Task<IHttpActionResult> GetByCodigoReceta(string codigoReceta)
         {
             if (string.IsNullOrWhiteSpace(codigoReceta))
@@ -50,7 +65,7 @@ namespace RecetasMedicas.Infrastructure.Controllers
                 return BadRequest("El código de receta no puede estar vacío.");
             }
 
-            var receta = await formulaMedicaServices.GetByCodigoRecetaAsync(codigoReceta);
+            var receta = await _formulaMedicaRepository.GetByCodigoRecetaAsync(codigoReceta);
             if (receta == null)
             {
                 return NotFound();
@@ -58,61 +73,39 @@ namespace RecetasMedicas.Infrastructure.Controllers
 
             return Ok(receta);
         }
+
+
         [HttpPut]
         [Route("{codigoReceta}")]
-        public async Task<IHttpActionResult> UpdateByCodigoReceta(string codigoReceta, [FromBody] FormulaMedica updatedFormula)
+        public async Task<IHttpActionResult> UpdateByCodigoReceta(string codigoReceta, [FromBody] FormulaMedicaDTO updatedFormula)
         {
-            if (codigoReceta != updatedFormula.CodigoReceta)
-            {
-                return BadRequest("El 'codigoReceta' en la URL debe coincidir con el del cuerpo de la solicitud.");
-            }
-
-            var updated = await formulaMedicaServices.UpdateByCodigoRecetaAsync(codigoReceta, updatedFormula);
-            if (!updated)
-            {
+            var command = new UpdateFormulaCommand(codigoReceta, updatedFormula);
+            var result = await _mediator.Send(command);
+            if (!result)
                 return NotFound();
-                
-            }
+            return Ok(result);
 
-            return Ok("Persona actualizada correctamente");
         }
-        [HttpPost]
-        [Route("agregar")]
-        public async Task<IHttpActionResult> AddFormulaMedica([FromBody] FormulaMedica formulaMedica)
-        {
-            if (formulaMedica == null)
-            {
-                return BadRequest("La receta médica es inválida.");
-            }
-
-            var creada = await formulaMedicaServices.AddFormulaMedicaAsync(formulaMedica);
-
-            if (!creada)
-            {
-                return Content(HttpStatusCode.InternalServerError, "Error al guardar la receta médica.");
-            }
-
-            return Created($"api/formulamedica/codigo/{formulaMedica.CodigoReceta}", formulaMedica);
+    
+           [HttpPost]
+           [Route("agregar")]
+           public async Task<IHttpActionResult> AddFormulaMedica([FromBody] FormulaMedicaDTO formulaMedica)
+           {
+            var command = new AddFormulaCommand(formulaMedica);
+            var id = await _mediator.Send(command);
+            return Ok();
         }
 
         [HttpDelete]
         [Route("{codigoReceta}")]
         public async Task<IHttpActionResult> DeleteByCodigoReceta(string codigoReceta)
         {
-            if (string.IsNullOrWhiteSpace(codigoReceta))
-            {
-                return BadRequest("El código de receta no puede estar vacío.");
-            }
-
-            var deleted = await formulaMedicaServices.DeleteByCodigoRecetaAsync(codigoReceta);
-            if (!deleted)
-            {
+            var result = await _mediator.Send(new DeleteFormulaCommand(codigoReceta));
+            if (!result)
                 return NotFound();
-            }
 
-            return Ok("Receta médica eliminada correctamente.");
+            return Ok();
         }
 
-
-    }
+      }
 }

@@ -8,23 +8,24 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Web;
 using MediatR;
+using CitasMedicas.Application.Services;
 
 namespace CitasMedicas.Application.Queries
 {
 	public class GetAllCitasQueryHandler : IRequestHandler<GetAllCitasQuery, List<CitaDto>>
     {
-        private readonly ICitaMedicaRepository _citaMedicaRepository;
+        private readonly ICitaMedicaServices _citaMedicaServices;
         private readonly IMapper _mapper;
 
-        public GetAllCitasQueryHandler(ICitaMedicaRepository citaMedicaRepository, IMapper mapper)
+        public GetAllCitasQueryHandler(ICitaMedicaServices citaMedicaServices, IMapper mapper)
         {
-            _citaMedicaRepository = citaMedicaRepository;
+            _citaMedicaServices = citaMedicaServices;
             _mapper = mapper;
         }
 
         public async Task<List<CitaDto>> Handle(GetAllCitasQuery request, CancellationToken cancellationToken)
         {
-            var citas = await _citaMedicaRepository.GetAll();
+            var citas = await _citaMedicaServices.GetAll();
             return _mapper.Map<List<CitaDto>>(citas);
         }
     }

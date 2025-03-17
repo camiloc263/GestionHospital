@@ -3,7 +3,6 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Jwt;
 using Microsoft.Owin.Security;
 using Owin;
-using System;
 using System.Configuration;
 using System.Text;
 
@@ -25,7 +24,7 @@ namespace Persona.App_Start
                             ValidateIssuer = true,
                             ValidateAudience = true,
                             ValidateIssuerSigningKey = true,
-                            ValidIssuer = ConfigurationManager.AppSettings["JwtIssuer"], //some string, normally web url,  
+                            ValidIssuer = ConfigurationManager.AppSettings["JwtIssuer"],   
                             ValidAudience = ConfigurationManager.AppSettings["JwtIssuer"],
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(ConfigurationManager.AppSettings["JwtKey"]))
                         }

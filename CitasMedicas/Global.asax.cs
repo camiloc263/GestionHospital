@@ -48,20 +48,15 @@ namespace CitasMedicas
 
         private void RegisterDependencies(Container container)
         {
-            container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
-            // 1️⃣ Registrar IConnectionFactory primero
             container.Register<IConnectionFactory>(() => new ConnectionFactory
             {
                 HostName = "localhost",
-                Port = 5672,
                 UserName = "guest",
                 Password = "guest"
-
-                                
-            }, Lifestyle.Scoped);
+            }, Lifestyle.Singleton);
 
             // 2️⃣ Registrar RabbitMQProduce correctamente
-            container.Register<RabbitMQProduce>(Lifestyle.Scoped);
+            container.Register<IRabitMqRepository, RabbitMQProduce>(Lifestyle.Scoped);
 
             // 3️⃣ Registrar otros servicios
             container.Register<CitaMedicaContext>(Lifestyle.Scoped);
@@ -74,8 +69,6 @@ namespace CitasMedicas
             container.Register<IRequestHandler<UpdateCitaCommand, bool>, UpdateCitaCommandHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<AddCitaCommand, bool>, AddCitasCommandHandler>(Lifestyle.Scoped);
             container.Register<IRequestHandler<DeleteCitaCommand, bool>, DeleteCitaCommandHandler>(Lifestyle.Scoped);
-
-
 
             // Registrar AutoMapper
             var mapperConfig = new MapperConfiguration(cfg =>
